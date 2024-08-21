@@ -5,45 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de texto</title>
-    <link rel="stylesheet" href="./normalizeAndJoshC.css">
-    <link rel="stylesheet" href="./styles.css">
-  <!-- Agregar favicon <link rel="icon" href="./resources/----"> -->
+    <link rel="stylesheet" href="./styles/normalizeAndJoshC.css">
+    <!-- <link rel="stylesheet" href="./styles/style.css"> -->
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="icon" href="./images/msg-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Definir fuente -->
-    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100, 300, 500, 900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div id="top"></div>
         <nav class="nav">
             <div class="nav_buttons">
-                <a class="nav_buttons_button" href="index.html">H</a>
-                <a class="nav_buttons_button" href="portfolio.html">P</a>
-                <a class="nav_buttons_button" href="contact.html">C</a>
+                <a class="nav_buttons_button" href="#">H</a>
+                <a class="nav_buttons_button" href="#">P</a>
+                <a class="nav_buttons_button" href="#">C</a>
             </div>
         </nav>
         <hr>
     </header>
+
     <main>
-        <section>
-            <h1>Encriptador de texto</h1>
+        <h1>Encriptador de texto</h1>
+        <section class="origen">
+            <span>No se aceptan mayúsculas ni caracteres especiales</span>
+            <div class="origin_frame">
+                <textarea></textarea>
+                <button>X</button>
+            </div>
+            <div class="origin_buttons">
+                <button>Cifrar</button>
+                <button>Descifrar</button>
+            </div>
         </section>
-        <section>
-                <div>
-                    <p>Texto</p>
-                </div>
-                <div>
-                    <p>Resultado</p>
-                </div>
+        <section class="result">
+            <textarea></textarea>
+            <!-- <button>Copiar</button> -->
         </section>
     </main>
+
     <footer>
         <hr>
-        <div class="footer_content">
-            <span>Wilson Alzate </span>
-            <img id="logo_wil" src="./resources/wilson logo v2.0 svg.svg" alt="Logo Wilson Al">
-        </div>
+        <div class="line"></div>
+            <!-- <div class="footer_content"> -->
+        <div id="logo-container">
+            
+            <a href="https://www.linkedin.com/in/wilson-alzate-pineda/" target="_blank">
+                <img class="linkedin logo" src="./images/linkedin.svg" alt="LinkedIn">
+            </a>
+            
+            <a href="https://github.com/Wilalz" target="_blank">
+                <img class="github logo" src="./images/github.svg" alt="GitHub">
+            </a>
+            
+            <a href="https://www.linkedin.com/in/wilson-alzate-pineda/" target="_blank">
+                <img class="wilson logo" src="./images/wilson logo v2.0 svg.svg" alt="Logo Wilson">
+            </a>
+        </div>            
     </footer>
 
 </body>
