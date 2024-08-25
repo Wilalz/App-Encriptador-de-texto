@@ -180,12 +180,14 @@ body{
 
     .input_text,
     .output_text{
-        height: 60vh;
+        height: 24vh;
     }
 
     .button{
         margin-bottom: 2rem;
     }
+
+    /* Hacer  */
 
 }
 
