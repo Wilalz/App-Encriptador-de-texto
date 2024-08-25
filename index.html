@@ -6,49 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de texto</title>
     <link rel="stylesheet" href="./styles/normalizeAndJoshC.css">
-    <!-- <link rel="stylesheet" href="./styles/style.css"> -->
+    <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="icon" href="./images/msg-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100, 300, 500, 900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="container">
     <header>
-        <div id="top"></div>
         <nav class="nav">
-            <div class="nav_buttons">
-                <a class="nav_buttons_button" href="#">H</a>
-                <a class="nav_buttons_button" href="#">P</a>
-                <a class="nav_buttons_button" href="#">C</a>
+            <div class="nav_logo">
+                <img class="nav_logo_img" src="./images/msg-icon.png" alt="Logo del Encriptador">
+                <h1 class="nav_logo_title">Encriptador de texto</h1>
             </div>
+            <span class="nav_theme"></span>
+            <!-- <img class="nav_theme" src="./images/toggle-on.svg" alt="Logo del Encriptador"> -->
         </nav>
-        <hr>
     </header>
 
-    <main>
-        <h1>Encriptador de texto</h1>
-        <section class="origen">
-            <span>No se aceptan mayúsculas ni caracteres especiales</span>
-            <div class="origin_frame">
-                <textarea></textarea>
-                <button>X</button>
+    <main class="content">
+        <section class="content_input">
+            <span class="input_rules">Solo letras minúsculas y sin acentos</span>
+            <div class="input_frame">
+                <textarea 
+                    class="input_text" 
+                    id="input_text" 
+                    maxlength="4000"
+                    placeholder="Ingresa el texto"
+                    ></textarea>
+                <!-- <button class="btn_clear">X</button> -->
             </div>
-            <div class="origin_buttons">
-                <button>Cifrar</button>
-                <button>Descifrar</button>
+            <div class="input_buttons">
+                <!-- <button class="button">Limpiar</button> -->
+                <button 
+                    class="button" 
+                    id="btn_encrypt"
+                    >CIFRAR</button>
+                <button 
+                    class="button"
+                    id="btn_decrypt"
+                    >DESCIFRAR</button>
             </div>
         </section>
-        <section class="result">
-            <textarea></textarea>
-            <!-- <button>Copiar</button> -->
-        </section>
+
+        <section class="content_output">
+            <span class="output_rules">_</span>
+            <div class="output_frame">
+                <textarea 
+                    class="output_text" 
+                    id="output_text"
+                    ></textarea>
+            </div>
+            <div class="output_buttons">
+                <button 
+                    class="button"
+                    id="bnt_copy"
+                    >COPIAR</button>
+            </div>
+        </section> 
     </main>
 
     <footer>
-        <hr>
-        <div class="line"></div>
-            <!-- <div class="footer_content"> -->
+        <div class="hLine"></div>
         <div id="logo-container">
             
             <a href="https://www.linkedin.com/in/wilson-alzate-pineda/" target="_blank">
@@ -60,7 +80,7 @@
             </a>
             
             <a href="https://www.linkedin.com/in/wilson-alzate-pineda/" target="_blank">
-                <img class="wilson logo" src="./images/wilson logo v2.0 svg.svg" alt="Logo Wilson">
+                <img class="wilson logo" src="./images/wilson-logo-v2.0-svg.svg" alt="Logo Wilson">
             </a>
         </div>            
     </footer>
