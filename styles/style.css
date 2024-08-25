@@ -121,8 +121,6 @@ body{
     background-color: rgba(255, 254, 255, 0.85);
 }
 
-
-
 .input_text:focus,
 .output_text:focus{
     box-shadow: 0 0 10px var(--color-accent-four);
@@ -156,12 +154,38 @@ body{
 /* --- Responsive designs --- */
 /* --- Media query pantallas medianas */
 @media screen and (min-width:1280px){
-    
+    .content_input,
+    .content_output{
+        width: 40%;
+    }
+
+
 }
 
 
 /* --- Media query pantallas pequeñas */
 @media screen and (max-width:500px){
+    .content{
+        flex-direction: column;
+    }
+
+    .content_input,
+    .content_output{
+        width: 90%;
+    }
+
+    .input_rules{
+        margin-top: 1rem;
+    }
+
+    .input_text,
+    .output_text{
+        height: 60vh;
+    }
+
+    .button{
+        margin-bottom: 2rem;
+    }
 
 }
 
