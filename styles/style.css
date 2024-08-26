@@ -94,12 +94,7 @@ body{
 .input_rules,
 .output_rules{
     font-size: 0.8rem;
-    color: var(--color-tertiary);
     margin-bottom: 0.5rem;
-
-}
-
-.output_rules{
     color: transparent;
 }
 
@@ -121,6 +116,12 @@ body{
     box-shadow: 0 0 5px #15d0e5;
     resize: none;
     background-color: rgba(255, 254, 255, 1);
+}
+
+.output_text{
+    background-image: url(../images/boy-searching.png);
+    background-repeat: no-repeat;
+    background-position: center top 20%;
 }
 
 .input_text:focus,
@@ -190,7 +191,11 @@ body{
         margin-bottom: 1rem;
     }
 
-    /* Solucionar el brinco que tiene la imagen de fondo cuando se hace scroll  */
+    .output_text{
+        background-position: center top -20%;
+    }
+    
+
 
 }
 
